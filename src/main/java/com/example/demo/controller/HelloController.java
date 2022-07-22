@@ -12,9 +12,10 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/test")
 public class HelloController {
-    @GetMapping(value = "hello",name = "index")
-    public String index(@RequestParam(value = "name",required = false)String name){
-        String result = "hello";
+    @GetMapping(value = "/hello",name = "helloPage")
+    public String hello(@RequestParam(value = "name",required = false)String name){
+
+        String result = name;
         return result;
     }
 }

@@ -1,2 +1,2 @@
-# demo2
+# demo
 demo for study
